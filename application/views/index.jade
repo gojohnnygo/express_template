@@ -1,0 +1,13 @@
+extends layouts/application
+
+block head-scripts
+	script(type="text/javascript")
+		console.log("script in the header!");
+
+block body-scripts
+	script(type="text/javascript")
+		console.log("script at end of body!");
+
+block content
+	h1 Hello World!
+
