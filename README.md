@@ -142,7 +142,10 @@ Less files can be automatically compiled on change using grunt
 	grunt watch:less
 
 ## Testing
-TODO
+Run all specs:
+
+	./node_modules/mocha/bin/mocha spec/**/*_spec.js
+
 
 ## Deploying
 * grunt release (build client assets)
