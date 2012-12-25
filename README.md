@@ -126,6 +126,10 @@ To autocompile less files on change:
 The first argument to a callback is error
 
 ## Running
+Install dependencies
+
+	npm install
+
 The application server can be started with the following command:
 
 	node boot
