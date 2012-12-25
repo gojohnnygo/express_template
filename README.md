@@ -75,7 +75,9 @@ Basic middleware provided by express/connect:
 	res.set  => set response headers (res.set("content-type"))
 	res.get => get response headers (res.get("content-type"))
 	res.cookie => set response cookie
-	res.redirect => redirection, defaults to 302 (res.redirect("http://www.google.com"), res.redirect(301, "http://www.google.com"))
+	res.redirect => redirection, defaults to 302
+		res.redirect("http://www.google.com") is a 302
+		res.redirect(301, "http://www.google.com") is a 301
 	res.send =>
 		res.send(new Buffer("whoop"));
 		res.send({ some: "json" });
@@ -86,7 +88,7 @@ Basic middleware provided by express/connect:
 	res.json => Force response to be json (res.json({foo: "bar"}), res.json(null)
 	res.type => Set response content type
 	res.format => rails style content handlers
-	res.attachment => Set Content-Disposition header to attachment, set Content-Type based on filename
+	res.attachment => Set Content-Disposition header to attachment, Content-Type based on filename
 	res.sendfile => Set Content-Type based on filename
 	res.download => Transfer the file as an attachment (browsers will prompt users)
 	res.locals => Place to set content for views or other middleware to use
