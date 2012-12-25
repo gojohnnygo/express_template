@@ -120,6 +120,9 @@ To autocompile less files on change:
 * Javascript     => application/assets/javascripts
 * Less           => application/assets/less
 
+## Conventions
+The first argument to a callback is error
+
 ## Running
 The application server can be started with the following command:
 
