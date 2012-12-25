@@ -5,8 +5,8 @@ var config = require(path.join(__dirname, "..", "..", "config", "application"));
 
 module.exports = function(app) {
 	var hashFile = function(filename) {
-		return crypto.createHash("sha512").update(fs.readFileSync(path.join(config.root, filename))).digest("hex")
-	}
+		return crypto.createHash("sha512").update(fs.readFileSync(path.join(config.root, filename))).digest("hex");
+	};
 	var javascriptUrl;
 	var stylesheetUrl;
 	var jsHash;
@@ -29,4 +29,4 @@ module.exports = function(app) {
 		}
 		next();
 	};
-}
+};

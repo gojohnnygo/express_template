@@ -10,16 +10,16 @@ module.exports = function(grunt) {
 					"application/views/**/*"
 				],
 				files: [
-					"app/**/*.js"
+					"application/**/*.js"
 				]
 			},
 			browser: {
 				ignoreFiles: [
-					"app/assets/javascripts/vendor/**/*",
-					"app/assets/javascripts/spec/**/*"
+					"application/assets/javascripts/vendor/**/*",
+					"application/assets/javascripts/spec/**/*"
 				],
 				files: [
-					"app/assets/javascripts/**/*.js"
+					"application/assets/javascripts/**/*.js"
 				]
 			}
 		},
