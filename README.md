@@ -152,6 +152,13 @@ Run all specs:
 
 	./node_modules/mocha/bin/mocha spec/**/*_spec.js
 
+Testing libraries:
+
+* [mocha](http://visionmedia.github.com/mocha/)
+* [should](https://github.com/visionmedia/should.js/)
+* [sinon](http://sinonjs.org/)
+* [zombie](http://zombie.labnotes.org/)
+
 
 ## Deploying
 * grunt release (build client assets)
