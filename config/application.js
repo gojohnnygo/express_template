@@ -8,6 +8,8 @@ module.exports = {
 	root: rootDir,
 	environment: environment,
 	port: port,
+	mongodb: {
+	},
 	session: {
 		secret: "3f22b97793e73105d7efb5d71135058405a821ec"
 	}

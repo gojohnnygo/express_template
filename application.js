@@ -1,8 +1,8 @@
 var path         = require("path");
 var http         = require("http");
 var express      = require("express");
-var redis        = require(path.join(config.root, "application", "lib", "redis"));
 var config       = require(path.join(__dirname, "config", "application"));
+var redis        = require(path.join(config.root, "application", "lib", "redis"));
 var routes       = require(path.join(config.root, "application", "routes"));
 var csrf         = require(path.join(config.root, "application", "lib", "csrf"));
 var SessionStore = require(path.join(config.root, "application", "lib", "session_store"));

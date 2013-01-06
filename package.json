@@ -10,7 +10,11 @@
 	},
 	"dependencies": {
 		"express": "3.0.5",
-		"jade":    "0.27.7"
+		"jade":    "0.27.7",
+		"redis":   "0.8.2",
+		"mongodb": "1.2.7",
+		"lodash": "1.0.0-rc.3",
+		"async_runner": "git://github.com/agrieser/async_runner.git"
 	},
 	"devDependencies": {
 		"grunt":     "0.3.17",
