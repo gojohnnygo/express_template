@@ -1,25 +1,26 @@
 extends ../layouts/application
 
 block content
-  .container
-    .posts
-      h1 All posts
-      each post in posts
-        h4= post.title
-        .post-body
-          = post.body
+	.container
+		.posts
+			h1 All posts
+			each post in posts
+				h4= post.title
+				.post-body
+					= post.body
 
-    .well
-      h2 New Post
-      form.form-horizontal
-        .control-group
-          label.control-label Title
-          .controls
-            input(type="text", name="title")
-        .control-group
-          label.control-label Body
-          .controls
-            textarea(name="body")
-        .control-group
-          .controls
-            input(type="submit", class="btn btn-awesm")
+		.well
+			h2 New Post
+			form.form-horizontal
+				input(type="hidden", name="_csrf", value=token)
+				.control-group
+					label.control-label Title
+					.controls
+						input(type="text", name="title")
+				.control-group
+					label.control-label Body
+					.controls
+						textarea(name="body")
+				.control-group
+					.controls
+						input(type="submit", class="btn btn-awesm")
