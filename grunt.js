@@ -54,9 +54,10 @@ module.exports = function(grunt) {
 				name: "application",
 				insertRequire: ["application"],
 				preserveLicenseComments: false,
-				stubModules: [],
+				stubModules: ["hbs"],
 				out: "public/javascripts/application.js",
 				paths: {
+					hbs: "lib/hbs_server"
 				}
 			}
 		},
@@ -70,6 +71,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadTasks("tasks");
-	grunt.registerTask("build", "lint:server lint:browser less:release requirejs:release");
+	grunt.registerTask("build", "lint:server lint:browser less:release compileTemplates requirejs:release");
 	grunt.registerTask("release", "build min:release");
 };
