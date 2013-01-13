@@ -123,7 +123,17 @@ To autocompile less files on change:
 * Less           => application/assets/less
 
 ## Conventions
-The first argument to a callback is error
+The first argument to a callback is error.
+This is standard node convention and should always be followed.
+
+Database and other persistant connections are opened when the application boots (see `boot.js`), and will be open and available anywhere in the application code.
+
+		var mongo = require("application/lib/mongo");
+		mongo.collection("foobar", function(error, collection) {
+			collection.find({ foo: "bar" }).limit(1).nextObject(function(error, document) {
+				console.log(document);
+			});
+		});
 
 ## Running
 Install dependencies
