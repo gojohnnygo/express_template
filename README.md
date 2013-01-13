@@ -160,6 +160,11 @@ Testing libraries:
 * [zombie](http://zombie.labnotes.org/)
 
 
+## Code linting
+The project comes with JSHint preconfigured to check for proper formatting and common mistakes.
+
+  ./node_modules/grunt/bin/grunt lint
+
 ## Deploying
 * grunt release (build client assets)
 * APP_ENV=production APP_PORT=8080 node boot
