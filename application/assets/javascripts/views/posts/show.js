@@ -4,7 +4,7 @@ define(function(require) {
 
 	var View = function(options) {
 		this.template = template;
-		this.$el      = options.el || $("<div>");
+		this.$el      = $("<div>");
 		this.delegateEvents();
 	};
 

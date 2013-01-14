@@ -4,11 +4,12 @@ define(function(require) {
 	var ShowPostView = require("views/posts/show");
 	var PostModel    = require("models/post");
 
-	var Controller = function() {};
-
-	Controller.prototype.setupBindings = function() {
+	var Controller = function() {
 		this.models = [];
 		this.formView = new NewPostView({ el: $("form") });
+	};
+
+	Controller.prototype.setupBindings = function() {
 		this.formView.on("submit", this.createPostAction.bind(this));
 	};
 
