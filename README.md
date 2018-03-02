@@ -164,7 +164,7 @@ Run all specs:
 
 Testing libraries:
 
-* [mocha](http://visionmedia.github.com/mocha/)
+* [mocha](http://mochajs.org/)
 * [should](https://github.com/visionmedia/should.js/)
 * [sinon](http://sinonjs.org/)
 * [zombie](http://zombie.labnotes.org/)
